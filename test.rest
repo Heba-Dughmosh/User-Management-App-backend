@@ -1,0 +1,30 @@
+@url = http://localhost:3022
+
+### show all user
+GET {{url}}
+Content-Type: application/json
+
+### delete a user
+DELETE {{url}}/deleteuser/6192322a78b0582cb72ed9c7
+Content-Type: application/json
+
+### add a user
+POST {{url}}/adduser
+content-type: application/json
+
+{
+    "user": {
+        "name": "Angie Additive",
+        "username": "angie_additive",
+        "email": "angie@hotmail.com"
+    }
+}
+
+### update an email user
+PATCH {{url}}/edituser/6192322a78b0582cb72ed9c6
+content-type: application/json
+
+{
+    "email": "th.gmail.com"
+}
+
