@@ -3,7 +3,7 @@ import mongodb, { MongoClient } from "mongodb";
 import cors from 'cors';
 
 const app = express();
-const port = 3022;
+const port = process.env.PORT || 3022;
 const mongoConnectionString = "mongodb://localhost:27017";
 const client = new MongoClient(mongoConnectionString);
 
